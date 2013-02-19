@@ -10,7 +10,8 @@ import random
 # Omdat 0 niet tot de mogelijkheden behoort, doen we +1
 # De gegenereerde getallen zijn altijd < 1.0, dus we kunnen *100 doen
 # (na int() wordt het toch naar beneden afgerond)
-random = int(random.random()*100+1)
+random = random.randint(1, 100)
+# random = int(random.random()*100+1)
 
 points = 25
 
