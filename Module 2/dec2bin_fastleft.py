@@ -17,7 +17,7 @@ Body:
 binary = ""
 negative = (dec < 0)
 dec = abs(dec)
-while dec >= 0:
+while dec > 0:
     if dec%2:
         binary = "1" + binary
     else:
