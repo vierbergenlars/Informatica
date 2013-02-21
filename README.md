@@ -9,3 +9,5 @@ Eventueel ook pull-requests (vereist een github account)
 ## Links
 
  * [Python docs](http://docs.python.org/2.7/library/index.html)
+ * [Python for beginners](http://www.pythonforbeginners.com/)
+ * [Python shortcuts for the beginner](http://maxburstein.com/blog/python-shortcuts-for-the-python-beginner/)
