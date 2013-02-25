@@ -11,6 +11,7 @@ Eventueel ook pull-requests (vereist een github account)
  * [Python docs](http://docs.python.org/2.7/library/index.html)
  * [Python for beginners](http://www.pythonforbeginners.com/)
  * [Python shortcuts for the beginner](http://maxburstein.com/blog/python-shortcuts-for-the-python-beginner/)
+ * En, ...[The best programmers are the quickest to Google](http://blog.framebase.io/post/43973262180/the-best-programmers-are-the-quickest-to-google), dus doe het gewoon!
 
 
 # The MIT License (MIT)
