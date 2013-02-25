@@ -20,6 +20,8 @@ In het kort:
  * Gratis te gebruiken, op voorwaarde dat de onderstaande licentie bijgevoegd is
  * Geen garantie dat de code werkt of geschikt is voor een bepaald doel
  * Geen aansprakelijkheid voor eventuele schade opgelopen door het gebruik van deze software
+ 
+Wettelijke bla bla, ...
 
 ```
 Copyright (c) 2013 Lars Vierbergen
