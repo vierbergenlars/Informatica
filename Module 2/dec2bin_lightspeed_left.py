@@ -25,12 +25,27 @@ if dec:
     while dec:
         # Gets the rightmost bit from the decimal representation.
         # & is the AND operator. Works like this:
-        #     100101001
-        #   & 101100101
+        #     100101001   (a)
+        #   & 101100101   (b)
         #    ----------
-        #     100100001
+        #     100100001   (c)
         # Only setting the bits where bits of both numbers are 1
-        # 
+        #
+        # --
+        # For the confused: the AND operation is performed on each pair of bits
+        # individually. The results are pasted back together afterwards.
+        # So:(a) (b) (c)
+        #     1 & 1 = 1
+        #     0 & 0 = 0
+        #     0 & 1 = 0
+        #     1 & 1 = 1
+        #     0 & 0 = 0
+        #     1 & 0 = 0
+        #     0 & 1 = 0
+        #     0 & 0 = 0
+        #     1 & 1 = 0
+        # Read top to bottom. (Implementation in python: https://gist.github.com/vierbergenlars/5043999#file-boolean_and-py)
+        # --
         # This operation discards all bytes but the rightmost one.
         # The result is stored in `rbit`
         rbit = dec & 1;
