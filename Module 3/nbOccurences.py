@@ -11,6 +11,14 @@ def nb_occurences(el, lst):
     Returns 0 if `lst` is not a list
     """
     
+    # # Loop invariant
+    # @require `lst` is a list
+    # @require `cnt` is zero
+    # @return The number of occurences of `el` in the list
+    # @loop:
+    #   @while There are still unprocessed entries in the list
+    #   @do Add one to the counter `cnt`
+    
     # If `lst` is not a list, return 0.
     # Returning causes the function to stop now and return control to the
     # calling code.

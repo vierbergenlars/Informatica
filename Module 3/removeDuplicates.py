@@ -11,6 +11,15 @@ def remove_duplicates(lst):
     [!] Modifies `lst` directly
     Returns False on error, True on success
     """
+    
+    # # Loop invariant
+    # @require `lst` is a list
+    # @require `seen` is an empty list
+    # @result `lst` is a list which contains each value only once
+    # @loop:
+    #   @while There are unprocessed elements in `lst`
+    #   @do If the element has not yet occured, save it.
+        
     # Check if they passed a list in the variable `lst`
     if not isinstance(lst, list):
         return False

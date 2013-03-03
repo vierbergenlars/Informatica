@@ -15,6 +15,18 @@ def merge(lst1, lst2):
     Returns a sorted list where `lst1` and `lst2` are merged and deduplicated
     """
     
+    # # Loop invariant
+    # @require Both lists are already sorted
+    # @require `ret` is empty list that will contain the values when the lists
+    #           have been merged.
+    # @return The two lists merged into one, sorted and deduped
+    # @loop:
+    #   @while Unprocessed entries in one or both lists
+    #   @do:
+    #       Take the first unprocessed entry from both lists and compare them
+    #       Add the smallest entry to the merged list (if not yet present)
+    #           and mark that entry as processed.
+    
     # Check if both lists are sorted (function sorted() in sortedList.py)
     # Return false if the lists are not sorted
     if not sortedList.sorted(lst1) or not sortedList.sorted(lst2):
