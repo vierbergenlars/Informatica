@@ -18,13 +18,15 @@ def power(x, n):
     #   Stop when n is zero
     
     mult = 1
-    while n > 0:
-        if n&1: # n%2 == 1
+    p=n
+    while p > 0:
+        # mult*(x**p) = x**n
+        if p%2:
             mult*=x
-            n&=~1 # n-=1
+            p-=1
         else:
-            n>>=1 # n//=2
-            mult*=power(x, n)
+            p//=2
+            mult*=power(x, p)
 
     return mult            
         
