@@ -14,7 +14,7 @@ Created on Wed Mar 27 10:19:48 2013
 #   nul.
 def vector_sum(left, right):
     result = {}
-    for k in range(max(left.keys()+right.keys())+1):
+    for k in set(left.keys()) | set(right.keys()):
         sum_k = left.get(k,0) + right.get(k, 0)
         if sum_k:
             result[k] = sum_k
