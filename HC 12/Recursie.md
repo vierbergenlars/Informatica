@@ -53,4 +53,20 @@ While-lus is impliciet gemaakt => verschillende recursieve oproepen na elkaar
              
         H(k) = 2^(k-1) + 2^(k-2) + .. + 2 + 1
              = 2^k - 1
+             
+## Kenmerken
+
+ * Triviaal geval is altijd nodig
+
+## Quicksort
+
+ * Neem aan dat de groep perfect in 2 gesplitst wordt door de pivot
+
+           n
+        |     \
+        n/2    n/2
+        |  \    |  \
+        n/4 n/4 n/4 n/4
+        ...
+  * Kan veralgemeend worden voor random selectie van een pivotelement.
 
