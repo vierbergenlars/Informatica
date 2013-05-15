@@ -34,6 +34,11 @@ def start_chat():
 def generate_response(words):
     i = int(random.unform(0, len(random_resp)))
     s = random_resp[i]
+
+    for w in words:
+        if w in programmed_resp:
+            s = programmed_resp[w]
+    
     return s
     
     
