@@ -9,4 +9,9 @@ def start_chat():
     print "Welkom";
     while True:
         a = raw_input('..>')
-        print "Ik begrijp het"
+        r = generate_response()
+        print r
+        
+def generate_response():
+    s = "Ik begrijp het..."
+    return s
