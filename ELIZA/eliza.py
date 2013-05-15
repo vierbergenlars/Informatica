@@ -4,6 +4,7 @@ Created on Wed May 15 08:40:53 2013
 
 @author: lars
 """
+import random
 
 random_resp = []
 
@@ -20,5 +21,6 @@ def start_chat():
         print r
         
 def generate_response():
-    s = "Ik begrijp het..."
+    i = int(random.unform(0, len(random_resp)))
+    s = random_resp[i]
     return s
