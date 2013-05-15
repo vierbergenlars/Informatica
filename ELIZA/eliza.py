@@ -27,7 +27,7 @@ def start_chat():
     build_random_resp()
     while True:
         a = raw_input('..>')
-        w = process_string(s)
+        w = process_string(a)
         r = generate_response(w)
         print r
         
