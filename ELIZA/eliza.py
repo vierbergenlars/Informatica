@@ -21,10 +21,14 @@ def build_programmed_resp():
     programmed_resp["leuven"] = "Leuke stad!"
     programmed_resp["gent"] = "Lelijke stad"
     programmed_resp["antwerpen"] = "Parking"
+    programmed_resp["vervelen"] = "Blok dan een beetje"
+    programmed_resp["verveling"] = "Blok dan een beetje"
+
 
 def start_chat():
     print "Welkom";
     build_random_resp()
+    build_programmed_resp()
     while True:
         a = raw_input('..>')
         w = process_string(a)
@@ -32,7 +36,7 @@ def start_chat():
         print r
         
 def generate_response(words):
-    i = int(random.unform(0, len(random_resp)))
+    i = int(random.uniform(0, len(random_resp)))
     s = random_resp[i]
 
     for w in words:
