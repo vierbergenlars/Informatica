@@ -8,12 +8,19 @@ import random
 import string
 
 random_resp = []
+programmed_resp = {}
 
 def build_random_resp():
     random_resp.append("Ik begrijp het ...")
     random_resp.append("Hoe voel je je daarbij?")
     random_resp.append("Mooi weer vandaag")
     random_resp.append("Binnenkort examens...")
+    
+def build_programmed_resp():
+    programmed_resp["python"] = "Leuke programmeertaal?"
+    programmed_resp["leuven"] = "Leuke stad!"
+    programmed_resp["gent"] = "Lelijke stad"
+    programmed_resp["antwerpen"] = "Parking"
 
 def start_chat():
     print "Welkom";
