@@ -25,32 +25,3 @@ def sort(lst):
         sorted_end_idx += 1
     return lst
 
-# -----------------------------------------------------------------------------
-
-# Insertion sort
-def sort(lst):
-    i=0
-    while i < len(lst):
-        j = i
-        while i > 0:
-            if lst[j] < lst[j-1]:
-                exch(lst, j, j-1)
-            else:
-                break
-            j-=1
-        i+=1
-    return lst
-                
-# -----------------------------------------------------------------------------
-
-# Bubble sort
-def sort(lst):
-    lim = len(lst)-1
-    while lim > 0:
-        i = 0
-        while i < lim:
-            if lst[i] > lst[i+1]:
-                exch(lst, i, i+1)
-            i+=1
-        lim-=1
-    return lst
